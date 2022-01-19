@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>GIMM 285 Form</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>PA1: Space Form</h1>
+    <div class="col-4">
+        <label for="Question1">Do you think humanity is alone in the universe?</label>
+    </div>
+    <div class="col-8">
+        <select id="aliens" name="Alien life">
+            <option value=""></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+
+    <div class="col-4">
+        <label for="Question2">How much interest do you have in space?</label>
+    </div>
+    <div class="col-8">
+        <select id="interest" name="Interest">
+            <option value=""></option>
+            <option value="none">No interest</option>
+            <option value="small">A little interested</option>
+            <option value="medium">Fairly interested</option>
+            <option value="large">Significantly interested</option>
+        </select>
+    </div>
+
+    <div class="col-4">
+        <label for="Question3">What expectations do you have for space exploration and technological developments in 50 years?</label>
+    </div>
+    <div class="col-8">
+        <textarea id="expectation" name="Expectation"></textarea>
+    </div>
+
+    <div class="col-4">
+        <label for="image">Post an image of one of your expectations:</label>
+    </div>
+    <div class="col-8">
+        <input type="file">
+    </div>
+
+    <div class="col-4">
+        <label for="Question4">What is your name?</label>
+    </div>
+    <div class="col-8">
+        <input type="text" id="name" name="Name">
+    </div>
+
+    <div class="col-4">
+        <label for="Question5">What is your age?</label>
+    </div>
+    <div class="col-8">
+        <input type="text" id="age" name="Age">
+    </div>
+
+    <div class='row'>
+        <div class='col-12'>
+            <button id='submit'>Submit</button>
+        </div>
+    </div>
+
+    <hr />
+
+    <script>
+        document.getElementById('submit').addEventListener('click', () => {
+
+            const formData = new FormData();
+            formData.append('file', document.querySelector('input[type="file"]').files[0])
+            formData.append('aliens', document.getElementById('aliens').value)
+            formData.append('interest', document.getElementById('interest').value)
+            formData.append('expectation', document.getElementById('expectation').value)
+            formData.append('name', document.getElementById('name').value)
+            formData.append('age', document.getElementById('age').value)
+
+            let fetchSettings = {
+                method: 'POST',
+                body: formData
+            };
+            fetch("http://localhost/", fetchSettings)
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => {
+                    console.error('Error: ', error);
+                });
+            return;
+        });
+    </script>
+</body>
+</html>
