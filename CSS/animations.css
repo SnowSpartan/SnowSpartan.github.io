@@ -1,9 +1,9 @@
 @keyframes cute-rotate{
-    from{transform: rotate(5deg);}
-    to{transform: rotate(-5deg);}
+    from{transform: rotate(2.5deg);}
+    to{transform: rotate(-2.5deg);}
 }
 
 @keyframes hover{
-    from{transform:scale(1) ;}
-    to{transform: scale(1.2);}
+    from{transform:scale(100%) ;}
+    to{transform: scale(110%);}
 }
