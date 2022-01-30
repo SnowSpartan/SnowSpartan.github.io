@@ -50,6 +50,10 @@ body {
     color: #FFFFFF;
 }
 
+h1 {
+    text-align: center;
+}
+
 nav {
     background-color: #820263;
     border-radius: 10px;
