@@ -44,3 +44,34 @@ img {
 .overflow {
     overflow-x:auto;
 }
+
+body {
+    background-color: #19395C;
+    color: #FFFFFF;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: #820263;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+    nav li {
+        padding: 1.0rem 2.5rem;
+        display: inline;
+        border-right: 2px solid black;
+    }
+
+    nav :hover {
+        background-color: #3FA7D6;
+    }
+
+    nav a{
+        color: #FFFFFF
+    }
