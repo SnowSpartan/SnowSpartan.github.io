@@ -75,3 +75,50 @@ nav {
     nav a{
         color: #FFFFFF
     }
+
+
+/*Fabian's CSS*/
+
+  .cute-rotate{
+      animation: cute-rotate 2s ease-in-out alternate infinite;
+  }
+  .portfolio img{
+      width: 40%;
+      height: auto;
+      vertical-align: center;
+      border-style:solid;
+      border-color: rgba(238,99,82, 1);
+  }
+  .portfolio{
+      border-style:solid;
+      border-color: rgba(111, 24, 27, 0.5);
+      border-radius: 5%;
+      margin-top: 3%;
+      padding: 2% 5% 2% 5%;
+      text-align: center;
+      background-color: rgba(238,99,82, 0.5);
+  }
+  .sherman{
+      background-color: rgba(77, 165, 114, 0.801);
+      text-align: center;
+      padding: 2% 5% 2% 5%;
+      border-radius: 10%;
+  }
+
+    .center{
+      text-align: center;
+  }
+  img:hover{
+      animation: hover 0.25s ease-out alternate forwards;
+  }
+
+  h3{
+      font-weight: 300;
+  }
+
+  #bg-pic-headshot{
+    background-image:url("../Media/Fabian/Dont\ look\ here/scribble-scrabble.png");
+    background-color: rgba(25,57,92,1);
+    background-blend-mode: darken; 
+    background-size: cover;
+  }

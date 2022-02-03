@@ -7,92 +7,78 @@
             <link href="CSS/responsive.css" rel="stylesheet">
             <style>
             body {
-              font-family: 'Bubblegum Sans', 'Sofia', sans-serif;
-            }
-
-            .cute-rotate{
-                animation: cute-rotate 2s ease-in-out alternate infinite;
-            }
-            .portfolio img{
-                width: 40%;
-                height: auto;
-                vertical-align: center;
-                border-style:solid;
-                border-color: rgba(111, 24, 27, 1);
-            }
-            .portfolio{
-                border-style:solid;
-                border-color: rgba(111, 24, 27, 0.5);
-                border-radius: 5%;
-                margin-top: 3%;
-                padding: 2% 5% 2% 5%;
-                text-align: center;
-                background-color: rgba(203, 28, 41, 0.5);
-            }
-            .sherman{
-                background-color: rgba(89, 169, 122, 0.8);
-                text-align: center;
-                padding: 2% 5% 2% 5%;
-                border-radius: 10%;
-            }
-
-            h1{
-                text-align: center;
-            }
-            img:hover{
-                animation: hover 0.25s ease-out alternate forwards;
-            }
-            
+                font-family: 'Bubblegum Sans', 'Sofia', sans-serif;
+                }
             </style>
         </head>
 
     <body>
+        <nav>
+            <ul>
+                <li><a href=index.html>home</a></li>
+                <li><a href=nested.html>nested examples</a></li>
+                <li><a href=attributes.html>attribute examples</a></li>
+                <li><a href=tags.html>tag examples</a></li>
+                <li><a href=samuel.html>Samuel's page</a></li>
+                <li><a href=blake.html>Blakes's page</a></li>
+                <li><a href=fabian.html>fabian's page</a></li>
+            </ul>
+        </nav>
         <br>
-        <h1 class = 'cute-rotate'>Fabian's little corner of the internet</h1>
-        <a href=index.html>Test</a>
-        <!-- Take profesional but not really photo-->
-        <img src="Media/Fabian/Bautista.Fabian.photo.jpg" alt = 'stupid little idiot fucker'>
-        <hr>
-        <div class = 'row'><!--Make this in the middle-->
-            <div class = 'col-10'>
-                <p>I'm Fabian Bautista, a college student currently studying game design instead of animation and hoping to get into the television entertainment industry</p>
-                <p>I've done a lot of stuff in my life, including but not limited to...</p>
+        <div id = 'bg-pic-headshot'>
+            <h1 class = 'cute-rotate center'>Fabian's little corner of the internet</h1>
+            <!-- Take profesional but not really photo-->
+            <div class = 'center'>
+                <img src="Media/Fabian/Bautista.Fabian.photo.jpg" alt = 'stupid little idiot fucker'>
             </div>
+            <hr>
+        </div>
+        
+        
+        <div class = 'row'><!--Make this in the middle-->
+            <div class = 'col-1'></div>
+            <div class = 'col-10 center'>
+                <h3>I'm Fabian Bautista, a college student currently studying game design instead of animation and hoping to get into the television entertainment industry</h3>
+                <h3>I've done a lot of stuff in my life, including but not limited to...</h3>
+            </div>
+            <div class = 'col-1'></div>
         </div> 
 
         <div class = 'row'>
             <div class = 'col-4 sherman'> <!--Border with image bg-->
-                <h1>Animation</h3>
+                <h1>Animation</h1>
                 <img src ='Media/Fabian/idle-sherman.gif'>
             </div>
             <div class = 'col-1'></div>
             <div class = 'col-7 portfolio'>
-                <img style = 'vertical-align: 450%;'src="Media/Fabian/Don't look here/jack.gif"> <!--Ask for help on this-->
-                <img src="Media/Fabian/Don't look here/procreate sucks.gif">
+                <img style = 'vertical-align: 450%;'src="Media/Fabian/Dont look here/jack.gif"> <!--Ask for help on this-->
+                <img src="Media/Fabian/Dont look here/procreate sucks.gif">
             </div>
         </div>
 
         <div class = 'row'>
             <div class = 'col-7 portfolio'>
-                <img src="Media/Fabian/Don't look here/jack.gif"> <!--Ask for help on this-->
-                <img src="Media/Fabian/Don't look here/procreate sucks.gif">
+                <img src="Media/Fabian/Dont look here/insight.png"> <!--Ask for help on this-->
+                <img src="Media/Fabian/Dont look here/Stadium.png">
             </div>
             <div class = 'col-1'></div>
             <div class = 'col-4 sherman'> <!--Border with image bg-->
-                <h1>Illustration</h3>
+                <h1>Illustration</h1>
                 <img src ='Media/Fabian/awesome sherman.png'>
             </div>    
         </div>
 
         <div class = 'row'>
             <div class = 'col-4 sherman'> <!--Border with image bg-->
-                <h1>Video Editing</h3>
+                <h1>Video Editing</h1>
                 <img src ='Media/Fabian/sherman mouse.png'>
             </div>
             <div class = 'col-1'></div>
             <div class = 'col-7 portfolio'>
-                <img style = 'vertical-align: 450%;'src="Media/Fabian/Don't look here/jack.gif"> <!--Ask for help on this-->
-                <img src="Media/Fabian/Don't look here/procreate sucks.gif">
+                <video controls style='width: 49%;height: 27.5%;'>
+                    <source src="Media/Fabian/Dont look here/CM intro.mp4">
+                </video>
+                <iframe width="50%" height="27.5%" src="https://www.youtube.com/embed/vwfD_akGOs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div> <!--Copy paste this format more or less with different formats-->
     </body>
