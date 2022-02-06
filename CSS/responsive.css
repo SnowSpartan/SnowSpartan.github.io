@@ -21,11 +21,13 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    .col-custom {width: 12.5%}
 }
 
 [class*="col-"] {
     float: left;
     padding: 15px;
+    border-right: 2px solid black;
 }
 
 .row::after {
@@ -63,9 +65,9 @@ nav {
 }
 
     nav li {
-        padding: 1.0rem 2.5rem;
+        padding: 1.0rem;
         display: inline;
-        border-right: 2px solid black;
+        
     }
 
     nav :hover {
