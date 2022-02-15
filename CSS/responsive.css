@@ -77,3 +77,19 @@ nav {
     nav a{
         color: #FFFFFF
     }
+
+.Test{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: aqua;
+    float:right;
+}
+
+    .Test button {
+        border: 7px solid black;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        opacity: .1;
+    }

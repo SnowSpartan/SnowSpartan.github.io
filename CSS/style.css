@@ -47,3 +47,101 @@ abbr {
 div a {
     font-size: 30px;
 }
+
+/*Blake's css*/
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .col-custom {
+        width: 12.5%
+    }
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border-right: 2px solid black;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.overflow {
+    overflow-x: auto;
+}
+
+body {
+    background-color: #19395C;
+    color: #FFFFFF;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: #820263;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+    nav li {
+        padding: 1.0rem;
+        display: inline;
+    }
+
+    nav :hover {
+        background-color: #3FA7D6;
+    }
+
+    nav a {
+        color: #FFFFFF
+    }
