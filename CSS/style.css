@@ -120,6 +120,7 @@ body {
     background-color: #19395C;
     color: #FFFFFF;
 }
+/*background: url(*/
 
 h1 {
     text-align: center;
@@ -132,6 +133,10 @@ nav {
     overflow: hidden;
     border: 3px solid black;
 }
+    /*consider adding 
+        position: fixed;
+        top: 0px;
+    */
 
     nav li {
         padding: 1.0rem;
@@ -144,4 +149,20 @@ nav {
 
     nav a {
         color: #FFFFFF
+    }
+
+.Circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: aqua;
+    float: right;
+}
+
+    .Circle button {
+        border: 7px solid black;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        opacity: .1;
     }
