@@ -1,5 +1,9 @@
+body{
+    background-color: #4e88aa;
+}
 .cute-rotate{
     animation: cute-rotate 2s ease-in-out alternate infinite;
+    color: white;
 }
 .portfolio img{
     width: 40%;
@@ -33,7 +37,7 @@ img:hover{
 
 #bg-pic-headshot{
   background-image:url("../Media/Fabian/Dont\ look\ here/scribble-scrabble.png");
-  background-color: rgba(25,57,92,1);
+  background-color: #4e88aa;
   background-blend-mode: darken; 
   background-size: cover;
 }
