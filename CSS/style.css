@@ -126,7 +126,7 @@ body {
 }
 /*background: url(*/
 
-h1 {
+.center {
     text-align: center;
 }
 
@@ -145,6 +145,7 @@ nav {
     nav li {
         padding: 1.0rem;
         display: inline;
+        font-size: 20px;
     }
 
     nav :hover {
