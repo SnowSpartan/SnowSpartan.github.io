@@ -7,3 +7,9 @@
     from{transform:scale(100%) ;}
     to{transform: scale(110%);}
 }
+
+@keyframes glow{
+    to {
+      box-shadow: 0px 0px 30px 20px #048791;
+    }
+  }
