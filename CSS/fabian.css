@@ -1,25 +1,28 @@
-body{
-    background-color: #4e88aa;
+h2
+{
+    text-decoration: none; /**Remove when h2 code is edited in master style doc**/
+}
+
+hr
+{
+    border-color: #95b2ca
 }
 .cute-rotate{
     animation: cute-rotate 2s ease-in-out alternate infinite;
-    color: white;
+    font-size: 2.75em;
 }
+
 .portfolio img{
-    width: 40%;
-    height: auto;
     vertical-align: center;
-    border-style:solid;
-    border-color: rgba(238,99,82, 1);
 }
+
 .portfolio{
     border-style:solid;
-    border-color: rgba(111, 24, 27, 0.5);
-    border-radius: 5%;
+    border-color: rgba(111, 24, 27, 0.0);
     margin-top: 3%;
     padding: 2% 5% 2% 5%;
     text-align: center;
-    background-color: rgba(238,99,82, 0.5);
+    background-color: #82aed1;
 }
 .sherman{
     background-color: rgba(77, 165, 114, 0.801);
@@ -28,16 +31,44 @@ body{
     border-radius: 10%;
 }
 
-.center{
-    text-align: center;
-}
+
 img:hover{
     animation: hover 0.25s ease-out alternate forwards;
 }
 
 #bg-pic-headshot{
-  background-image:url("../Media/Fabian/Dont\ look\ here/scribble-scrabble.png");
-  background-color: #4e88aa;
-  background-blend-mode: darken; 
-  background-size: cover;
+    background-image:url("../Media/Fabian/Dont\ look\ here/scribble-scrabble.png");
+    background-color: #ddebff;
+    background-blend-mode: darken; 
+    background-size: cover;
 }
+
+#legal-mumbo-jumbo{
+    background-color: #95b2ca;
+    margin: -8px;
+    margin-bottom: -50px;   
+}
+
+#legal-mumbo-jumbo a{
+
+}
+
+#legal-mumbo-jumbo-img{
+    background-image:url("../Media/Fabian/idle-sherman.gif");
+    background-color: #95b2ca;
+    background-blend-mode: darken; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:relative;
+    left: 525px;    
+}
+
+@media only screen and (min-width: 768px) {
+
+    #bg-pic-headshot img
+    {
+        padding-bottom: 3%;
+        padding-top: 3%;/**So for some reason padding 3 0 3 0 doesnt work but this does?????? **/
+    }
+}
+

@@ -12,78 +12,121 @@
         </head>
 
     <body>
-        <nav>
-            <ul><!--See if I can do a fixed position for this nav bar-->
-                <li><a href=index.html>home</a></li>
-                <li><a href=nested.html>nested examples</a></li>
-                <li><a href=attributes.html>attribute examples</a></li>
-                <li><a href=tags.html>tag examples</a></li>
-                <li><a href=samuel.html>Samuel's page</a></li>
-                <li><a href=blake.html>Blakes's page</a></li>
-                <li><a href=fabian.html>fabian's page</a></li>
-                <li><a href="style.html">style examples</a></li>
-            </ul>
-        </nav>
+        <div class = 'row nav-bar'>
+            <div class = 'col-custom'>
+                <a href=index.html>Home</a>
+            </div>
+            <div class = 'col-custom'>
+                <a href=nested.html>Nested</a>
+            </div>
+            <div class = 'col-custom'>
+                <a href=attributes.html>Attributes</a>
+            </div>
+            <div class = 'col-custom'>
+                <a href=tags.html>Tags</a>
+            </div>
+            <div class = 'col-custom'>
+                <a href="style.html">Styles</a>
+            </div>
+            <div class = 'col-custom'>
+                <a href=samuel.html>Samuel</a>
+            </div>
+            <div class = 'col-custom'>
+                <a href=blake.html>Blake</a>
+            </div>
+            <div class = 'col-custom'>
+                <a href=fabian.html>Fabian</a>
+            </div>
+        </div>
         <br>
+
+        <h1 class = 'cute-rotate center'>Fabian's little corner of the internet</h1>
         <div id = 'bg-pic-headshot'>
-            <h1 class = 'cute-rotate center'>Fabian's little corner of the internet</h1>
-            <!-- Take profesional but not really photo-->
             <div class = 'center'>
                 <img src="Media/Fabian/Bautista.Fabian.photo.jpg" alt = 'stupid little idiot fucker'>
             </div>
-            <hr>
         </div>
+        <hr>
         
-        
-        <div class = 'row'><!--Make this in the middle-->
+
+        <div class = 'row'><!--Bio-->
             <div class = 'col-1'></div>
             <div class = 'col-10 center'>
-                <h2>I'm Fabian Bautista, a college student that wants to get into the television entertainment industry but is instead studying game design instead of animation for some reason</h2>
-                <h2>I've done a lot of stuff in my life, including but not limited to...</h2>
+                <h1>I'm Fabian Bautista, a college student that wants to get into the television entertainment industry but is instead studying game design instead of animation for some reason</h1>
+                <h1>I've done a lot of stuff in my life, including but not limited to...</h1>
             </div>
             <div class = 'col-1'></div>
         </div> 
 
-        <div class = 'row'>
-            <div class = 'col-4 sherman'> <!--Border with image bg-->
-                <h1>Animation</h1>
-                <img src ='Media/Fabian/idle-sherman.gif'>
+
+        <div class = 'portfolio'>
+            <h1>Animation</h1>
+            <div class = 'row'>
+                <div class = 'col-1'></div>
+                <div class = 'col-4'>
+                    <img style = 'padding-top: 100px;' src="Media/Fabian/Dont look here/jack.gif">
+                </div>
+                <div class = 'col-2'></div>
+                <div class = 'col-4'>
+                    <img src="Media/Fabian/Dont look here/procreate sucks.gif">
+                </div>
+                <div class = 'col-1'></div>
             </div>
-            <div class = 'col-1'></div><!--Try using float:right / left instead of this?-->
-            <div class = 'col-7 portfolio'>
-                <img style = 'vertical-align: 450%;'src="Media/Fabian/Dont look here/jack.gif"> <!--Ask for help on this-->
-                <img src="Media/Fabian/Dont look here/procreate sucks.gif">
+            <br>
+            <hr>
+            <br>
+            <h1>Illustration</h1>
+            <div class = 'row'>
+                <div class = 'col-1'></div>
+                <div class = 'col-4'>
+                    <img src="Media/Fabian/Dont look here/insight.png"> 
+                </div>
+                <div class = 'col-2'></div>
+                <div class = 'col-4'>
+                    <img src="Media/Fabian/Dont look here/Stadium.png">
+                </div>
+                <div class = 'col-1'></div>
             </div>
+            <br>
+            <hr>
+            <br>
+            <h1>Video Editing</h1>
+            <div class = 'row'>
+                <div class = 'col-1'></div>
+                <div class = 'col-10'>
+                    <iframe width="90%" height="76%" src="https://www.youtube.com/embed/vwfD_akGOs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class = 'col-1'></div>
+            </div>
+            <br>
         </div>
 
-        <div class = 'row'>
-            <div class = 'col-7 portfolio'>
-                <img src="Media/Fabian/Dont look here/insight.png"> <!--Ask for help on this-->
-                <img src="Media/Fabian/Dont look here/Stadium.png">
-            </div>
-            <div class = 'col-1'></div>
-            <div class = 'col-4 sherman'> <!--Border with image bg-->
-                <h1>Illustration</h1>
-                <img src ='Media/Fabian/awesome sherman.png'>
-            </div>    
-        </div>
-
-        <div class = 'row'>
-            <div class = 'col-4 sherman'> <!--Border with image bg-->
-                <h1>Video Editing</h1>
-                <img src ='Media/Fabian/sherman mouse.png'>
-            </div>
-            <div class = 'col-1'></div>
-            <div class = 'col-7 portfolio'>
-                <video controls style='width: 49%;height: 27.5%;'>
-                    <source src="Media/Fabian/Dont look here/CM intro.mp4">
-                </video>
-                <iframe width="50%" height="27.5%" src="https://www.youtube.com/embed/vwfD_akGOs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div> <!--Copy paste this format more or less with different formats-->
         <br>
         <div class = 'hyperlink center'>
             <a href="https://fabbaut.artstation.com/">ArtStation Portfolio</a> 
+        </div>
+        <br>
+
+        <div id = 'legal-mumbo-jumbo'>
+            <div class = 'row'>
+                <div class = 'col-1'></div>
+                <div id = 'legal-mumbo-jumbo-img' class = 'col-2'></div>
+                <div class = 'col-6' style = 'text-align: center;'>
+                    <h3>Copyright ©2022 SSE Enterprises. ALL RIGHTS RESERVED</h3>
+                </div>
+                <div >
+                    <div class = 'col-1' style = 'text-align: left;'>
+                        <a href = 'https://twitter.com/ZmbGst'><img style = 'height: 30px; width: auto;' src="Media/Fabian/Twitter-Logo.png" alt = 'Twitter'></a>
+                    </div>
+                    <div class = 'col-1' style = 'text-align: left;'>
+                        <a href = 'https://trello.com/b/q6IFM5Gm/zmbgsts-stuff'><img style = 'height: 30px; width: auto;' src="Media/Fabian/Trello-Logo.png" alt = 'Twitter'></a>
+                    </div>
+                </div>
+                
+                <div class = 'col-1'></div>
+            </div>
+
+            
         </div>
     </body>
 
