@@ -1,3 +1,80 @@
-﻿body
-{
+﻿#Circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: aqua;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 25%;
+    z-index: 2;
+}
+
+    #Circle button {
+        border: 7px solid black;
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        opacity: .1;
+    }
+
+    #Circle:hover {
+        animation-name: moveCircle;
+        animation-duration: 1s;
+    }
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-decoration: none;
+    background-color: #19395C;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#blake-background {
+    background-image: url("../Media/Blake/stars.webp");
+    background-size: 133% 100%;
+}
+
+img {
+    width: 400px;
+    height: 522px;
+    opacity: .9;
+}
+
+[class ="col-2"] {
+    float: left;
+    padding: 15px;
+    border-right: none;
+    text-align: center;
+}
+
+[class ="col-8"] {
+    float: left;
+    padding: 15px;
+    border-right: none;
+    text-align: center;
+}
+
+#cursor {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  background: var(--purple);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform .5s;
+  z-index: 99;
+}
+
+a {
+    color: white;
 }

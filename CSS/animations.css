@@ -13,3 +13,13 @@
       box-shadow: 0px 0px 30px 20px #048791;
     }
   }
+
+@keyframes moveCircle {
+    0% {
+        background-color: aqua;
+    }
+
+    100% {
+        background-color: red;
+    }
+}

@@ -4,41 +4,118 @@
     <head>
         <link href="./CSS/responsive.css" rel="stylesheet" />
         <link href="CSS/style.css" rel="stylesheet">
+        <link href="CSS/blake.css" rel='stylesheet'>
+        <link href="CSS/animations.css" rel='stylesheet'>
     </head>
 
-    <body>
-        <div class = 'row nav-bar'>
-            <div class = 'col-custom'>
+    <body id="blake-background">
+
+        <div class='row nav-bar'>
+            <div class='col-custom'>
                 <a href=index.html>Home</a>
             </div>
-            <div class = 'col-custom'>
+            <div class='col-custom'>
                 <a href=nested.html>Nested</a>
             </div>
-            <div class = 'col-custom'>
+            <div class='col-custom'>
                 <a href=attributes.html>Attributes</a>
             </div>
-            <div class = 'col-custom'>
+            <div class='col-custom'>
                 <a href=tags.html>Tags</a>
             </div>
-            <div class = 'col-custom'>
+            <div class='col-custom'>
                 <a href="style.html">Styles</a>
             </div>
-            <div class = 'col-custom'>
+            <div class='col-custom'>
                 <a href=samuel.html>Samuel</a>
             </div>
-            <div class = 'col-custom'>
+            <div class='col-custom'>
                 <a href=blake.html>Blake</a>
             </div>
-            <div class = 'col-custom'>
+            <div class='col-custom'>
                 <a href=fabian.html>Fabian</a>
             </div>
         </div>
 
-        <div class="Test">
+        <div id="Circle">
             <button></button>
         </div>
 
-        <h1 class = 'center'>Blake Hilton</h1>
+        <div class='center'>
+            <h1>Blake Hilton's Basement</h1>
+            <img src="media/Blake/IMG-0703.jpg" alt='Image of Blake Hilton'>
+
+            <br />
+            <br />
+
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+
+                <div class="col-8">
+                    <h2>I'm Blake Hilton. I have always been obsessed with stories, and been creating myriads of stories for close to a decade now.</h2>
+                    <br />
+                    <br />
+                    <h2>Here's a story I made:</h2>
+                    <link href="media/Blake/Short_Story_White_Lies.pdf" />
+                    <a href="media/Blake/Story.pdf">Test</a>
+                </div>
+
+                <div class="col-2">
+
+                </div>
+            </div>
+        </div>
+        <div id="cursor"></div>
+        <script>
+
+            // set the dimensions and margins of the graph
+            window.addEventListener('mousemove', handleMouseMove);
+            let test = document.getElementById("Circle");
+            //let initTop = 0;
+            //let initLeft = 0;
+            //let distanceNew = 0;
+            //let distanceOld = 0;
+            //const distance = (x0, y0, x1, y1) => Math.hypot(x1 - x0, y1 - y0);
+
+            function handleMouseMove(event) {
+                rect = test.getBoundingClientRect();
+
+                var top = event.pageY - (cursor.clientHeight / 2);
+                var left = event.pageX - (cursor.clientWidth / 2);
+
+                //distanceNew = distance(parseInt(test.style.left), parseInt(test.style.top), left, top);
+                //distanceOld = distance(parseInt(test.style.left), parseInt(test.style.top), initLeft, initTop);
+
+                cursor.style.top = top + 'px';
+                cursor.style.left = left + 'px';
+
+                //document.getElementById('Circle').style.top = rect.top - 5 + 'px';
+                test.style.top = (top * .5) + 'px';
+                test.style.left = (left * .5) + 'px'/*
+                                        if (true) {//parseInt(test.style.left) < left) {
+                                            if (distanceNew > distanceOld) {;
+                                                test.style.top = (top * .5) + 'px';
+                                                test.style.left = (left * .5) + 'px';
+                                            } else {
+                                                test.style.top = (rect.top + .001) + 'px';
+                                                test.style.left = (rect.left + .001) + 'px';
+                                            }
+                                        } else {
+                                            if (distanceNew < distanceOld) {
+                                                test.style.top = (top * .5) + 'px';
+                                                test.style.left = (left * .5) + 'px';
+                                            } else {
+                                                test.style.top = (rect.top + .001) + 'px';
+                                                test.style.left = (rect.left + .001) + 'px';
+                                            }
+                                        }
+                                        initTop = top;
+                                        initLeft = left;
+                                        console.log(parseInt(test.style.top));*/
+            }
+        </script>
     </body>
 
-    </html>
+</html>

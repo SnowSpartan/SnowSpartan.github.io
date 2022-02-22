@@ -125,7 +125,7 @@ img {
 
 body {
     background-color: #ddebff;
-    color: #061b38;;
+    color: #061b38;
 }
 
 .center {
@@ -148,19 +148,3 @@ body {
 .nav-bar a:hover {
     background-color: #3FA7D6;
 }
-
-.Circle {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    background-color: aqua;
-    float: right;
-}
-
-    .Circle button {
-        border: 7px solid black;
-        height: 50px;
-        width: 50px;
-        border-radius: 25px;
-        opacity: .1;
-    }
