@@ -5,7 +5,6 @@
             <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
             <link href="CSS/style.css" rel="stylesheet">
             <link href="CSS/animations.css" rel="stylesheet">
-            <link href="CSS/responsive.css" rel="stylesheet">
             <link href="CSS/fabian.css" rel = 'stylesheet'>
             <style>
             </style>
@@ -52,45 +51,47 @@
         <div class = 'row'><!--Bio-->
             <div class = 'col-1'></div>
             <div class = 'col-10 center'>
-                <h1>I'm Fabian Bautista, a college student that wants to get into the television entertainment industry but is instead studying game design instead of animation for some reason</h1>
-                <h1>I've done a lot of stuff in my life, including but not limited to...</h1>
+                <h3>I'm Fabian Bautista, a college student that wants to get into the television entertainment industry but is instead studying game design instead of animation for some reason</h3>
+                <h3>I've done a lot of stuff in my life, including but not limited to...</h3>
             </div>
             <div class = 'col-1'></div>
         </div> 
 
 
         <div class = 'portfolio'>
-            <h1>Animation</h1>
+            <h2>Animation</h2>
             <div class = 'row'>
                 <div class = 'col-1'></div>
                 <div class = 'col-4'>
-                    <img style = 'padding-top: 100px;' src="Media/Fabian/Dont look here/jack.gif">
+                    <img  id = 'anim-1' src="Media/Fabian/Dont look here/jack.gif">
                 </div>
                 <div class = 'col-2'></div>
                 <div class = 'col-4'>
-                    <img src="Media/Fabian/Dont look here/procreate sucks.gif">
+                    <img id = 'anim-2' src="Media/Fabian/Dont look here/procreate sucks.gif">
                 </div>
                 <div class = 'col-1'></div>
             </div>
+            <button class = 'row center' onclick="newAnim()">See new Animations!</button>
             <br>
             <hr>
             <br>
-            <h1>Illustration</h1>
+            <h2>Illustration</h2>
             <div class = 'row'>
                 <div class = 'col-1'></div>
                 <div class = 'col-4'>
-                    <img src="Media/Fabian/Dont look here/insight.png"> 
+                    <img id = 'img-1' src="Media/Fabian/Dont look here/insight.png"> 
                 </div>
                 <div class = 'col-2'></div>
                 <div class = 'col-4'>
-                    <img src="Media/Fabian/Dont look here/Stadium.png">
+                    <img id = 'img-2' src="Media/Fabian/Dont look here/Bibi.png">
                 </div>
                 <div class = 'col-1'></div>
             </div>
+            <button class = 'row center' onclick="newImg()">See new Illustrations!</button>
             <br>
             <hr>
             <br>
-            <h1>Video Editing</h1>
+            <h2>Video Editing</h2>
             <div class = 'row'>
                 <div class = 'col-1'></div>
                 <div class = 'col-10'>
@@ -112,7 +113,7 @@
                 <div class = 'col-1'></div>
                 <div id = 'legal-mumbo-jumbo-img' class = 'col-2'></div>
                 <div class = 'col-6' style = 'text-align: center;'>
-                    <h3>Copyright ©2022 SSE Enterprises. ALL RIGHTS RESERVED</h3>
+                    <h5>Copyright &copy;2022 SSE Enterprises. ALL RIGHTS RESERVED</h5>
                 </div>
                 <div >
                     <div class = 'col-1' style = 'text-align: left;'>
@@ -129,5 +130,109 @@
             
         </div>
     </body>
+    <script>
+        let randomizerPath = 'Media/Fabian/Dont look here/'
+
+        let imageArray = [
+            "Bibi.png",
+            "dark sheep.png",
+            "insight.png",
+            "peanuts peanuts.png",
+            "Stadium Final.png",
+        ]
+        let oldImg1 = 100;
+        let oldImg2 = 100;
+
+        let animationArray = [
+            'crawling.gif',
+            'jack.gif',
+            'procreate sucks.gif',
+            'scythe.gif',
+            'speen.gif',
+            'vibeskrine.gif',
+        ]
+        let oldAnim1 = 100;
+        let oldAnim2 = 100;
+
+        
+
+
+
+        function newAnim(){
+        
+            let randomAnimation = Math.floor(Math.random()*animationArray.length);
+
+            if (randomAnimation !== 0)
+            {
+                randomAnimation--;
+            }
+            
+            if (randomAnimation == oldAnim1)
+            {
+                if (randomAnimation == animationArray.length-1)
+                    randomAnimation = 0;
+                else 
+                    randomAnimation++;
+            }
+
+            document.getElementById('anim-1').setAttribute('src', randomizerPath + animationArray[randomAnimation]);
+            oldAnim1 = randomAnimation;
+
+
+            if (randomAnimation == oldAnim2)
+            {
+                if (randomAnimation == animationArray.length-1)
+                    randomAnimation = 0;
+                else 
+                    randomAnimation++;
+            }
+            
+            if (randomAnimation == animationArray.length-1)
+            {
+                randomAnimation--;
+            }
+            document.getElementById('anim-2').setAttribute('src', randomizerPath + animationArray[randomAnimation + 1]);
+            oldAnim2 = randomAnimation + 1;
+        }
+
+
+        function newImg(){
+        
+            let randomImage = Math.floor(Math.random()*imageArray.length);
+
+            if (randomImage !== 0)
+            {
+                randomImage--;
+            }
+            
+            if (randomImage == oldImg1)
+            {
+                if (randomImage == imageArray.length-1)
+                    randomImage = 0;
+                else 
+                    randomImage++;
+            }
+
+            document.getElementById('img-1').setAttribute('src', randomizerPath + imageArray[randomImage]);
+            oldImg1 = randomImage;
+
+
+            if (randomImage == oldImg2)
+            {
+                if (randomImage == imageArray.length-1)
+                    randomImage = 0;
+                else 
+                    randomImage++;
+            }
+            
+            if (randomImage == imageArray.length - 1)
+            {
+                randomImage--;
+            }
+            document.getElementById('img-2').setAttribute('src', randomizerPath + imageArray[randomImage + 1]);
+            oldImg2 = randomImage + 1;
+    }
+        
+    </script>
 
     </html>

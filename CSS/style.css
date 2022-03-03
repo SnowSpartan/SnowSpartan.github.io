@@ -24,6 +24,16 @@ video{
     margin-bottom: 15px;
     box-shadow: 0px 15px 30px rgba(255, 255, 255, 0.25);
 }
+    
+button {
+    background-color: #95b2ca;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 3px solid black;
+    width:20%;
+    height: auto;
+    font-size: 20px;
+}
 
 /*samuels css*/
 
