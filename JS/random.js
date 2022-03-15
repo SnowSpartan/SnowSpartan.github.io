@@ -14,11 +14,11 @@ function myFunction() {
     document.getElementById("numbers").innerHTML = gen;
     
     if (gen >= 5) {
-    document.getElementById("numbersbox").value = "You got a High number";
+    document.getElementById("numbersbox").value = "You got a High number =" + gen;
     x.style.display = "block";
 
   } else {
-    document.getElementById("numbersbox").value = "You got a Low number";
+    document.getElementById("numbersbox").value = "You got a Low number =" + gen;
     x.style.display = "none";
   }
 
