@@ -1,4 +1,4 @@
-﻿#Circle {
+﻿#Circles {
     height: 50px;
     width: 50px;
     border-radius: 25px;
@@ -9,7 +9,7 @@
     z-index: 2;
 }
 
-    #Circle button {
+    #Circles button {
         border: 7px solid black;
         height: 50px;
         width: 50px;
@@ -17,7 +17,7 @@
         opacity: .1;
     }
 
-    #Circle:hover {
+    #Circles:hover {
         animation-name: moveCircle;
         animation-duration: 1s;
     }
@@ -63,8 +63,8 @@ img {
 
 #cursor {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 1px;
+  height: 1px;
   top: 50%;
   left: 50%;
   border-radius: 100%;
