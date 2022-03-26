@@ -27,7 +27,6 @@ hr
     margin-top: 3%;
     padding: 2% 5% 2% 5%;
     text-align: center;
-    background-color: #82aed1;
 }
 .sherman{
     background-color: rgba(77, 165, 114, 0.801);
@@ -52,10 +51,6 @@ img:hover{
     background-color: #95b2ca;
     margin: -8px;
     margin-bottom: -50px;   
-}
-
-#legal-mumbo-jumbo a{
-
 }
 
 #legal-mumbo-jumbo-img{
