@@ -1,0 +1,32 @@
+﻿.grid {
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .grid div {
+        height: 33%;
+        width: 33%;
+        border: 1px solid;
+    }
+
+.taken {
+
+}
+
+.player-one {
+    background-color: blue;
+    border-radius: 15px;
+}
+
+.player-two {
+    position: relative;
+}
+
+.player-two:after {
+    content: "\274c";
+    font-size: 20px;
+    color: #FFF;
+}
